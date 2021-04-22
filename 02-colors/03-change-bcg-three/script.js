@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    let button = document.getElementById("run");
+    button.addEventListener("click", randomizeColor);
+
+    function randomizeColor() {
+        function value() {
+            return Math.floor(Math.random() * 256)
+        }
+        let randomBackgroundColor = `rgb(${value()}, ${value()}, ${value()})`;
+        document.body.style.backgroundColor = randomBackgroundColor;
+    }
 
 })();
