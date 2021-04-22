@@ -11,6 +11,7 @@
 
 (function() {
 
-    // your code here
+    const userName = prompt("Hi stranger, what is your name?");
+    alert(`Hello, ${userName} !`);
 
 })();

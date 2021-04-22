@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function personalInfo() {
 
-    // your code here
+    const ageQuestion = prompt("What is your age?");
+    const genderQuestion = prompt("What is your gender");
+    const townQuestion = prompt("What town do you live in?");
+
+    const answers = confirm(`your info:
+    Age: ${ageQuestion}
+    Gender: ${genderQuestion}
+    Town: ${townQuestion}
+    Is this information correct? Please click OK`);
+
+    if (answers !== true) {
+        personalInfo();
+    }
+
+
 
 })();
