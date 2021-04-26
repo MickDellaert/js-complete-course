@@ -10,7 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", () => {
 
-    // your code here
+        const birthDay = document.getElementById("dob-day").value;
+        const birthMonth = document.getElementById("dob-month").value;
+        const birthYear = document.getElementById("dob-year").value;
+
+        let dob = new Date(birthYear, birthMonth -1, birthDay);
+        let monthDiff = Date.now() - dob.getTime();
+        let ageDateFormat = new Date(monthDiff);
+        let year = ageDateFormat.getUTCFullYear();
+        let age = Math.abs(year - 1970);
+
+        alert(age);
+
+    });
 
 })();
