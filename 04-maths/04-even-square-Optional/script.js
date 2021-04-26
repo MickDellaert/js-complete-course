@@ -11,10 +11,15 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
+    // your code here
 
-        // your code here
+    document.getElementById("run").addEventListener("click", () => {
 
+        for (i = 1; i < 21; i++) {
+            if (Math.sqrt(i) % 1 === 0) {
+                console.log(i);
+            }
+        }
     });
 
 })();

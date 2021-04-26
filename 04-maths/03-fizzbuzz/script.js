@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+
+
+    for (number = 1; number < 100; number++){
+        if(number % 3 === 0){
+            console.log("fizz")
+        }
+        if(number % 5 === 0){
+            console.log("buzz")
+        }
+        if(number % 5 === 0 && number % 5 === 0){
+            console.log("fizzbuzz")
+        }
+        if((number % 3 !== 0) && (number % 5 !== 0)){
+            console.log(number)
+        }
+    }
 
 })();
