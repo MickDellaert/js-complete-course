@@ -20,6 +20,7 @@
         }
         let randomBackgroundColor = `rgb(${value()}, ${value()}, ${value()})`;
         document.body.style.backgroundColor = randomBackgroundColor;
-    }
 
+        document.getElementById("rgb").innerHTML=(randomBackgroundColor);
+    }
 })();
