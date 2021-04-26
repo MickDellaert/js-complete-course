@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    const fruits = [
         "apple",
         "perry",
         "strawberry",
@@ -27,5 +27,10 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        const checkForApple = fruits.includes("apple") ? "yes" : "no";
+        console.log(checkForApple);
+    });
 
 })();

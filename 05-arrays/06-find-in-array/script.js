@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Bradford",
             lastname: "Coldbath",
@@ -90,5 +90,14 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        const getEmail = people.find(element =>
+            element.firstname === "Jean" && element.lastname === "Dupont")
+
+        console.log(`email: ${getEmail.email}, index: ${people.indexOf(getEmail)}`);
+
+    });
+
 
 })();

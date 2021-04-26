@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -90,5 +90,13 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        const totalAge = people.reduce((currentAge, addedAge) => {
+            return addedAge.age + currentAge
+        }, 0)
+        console.log(totalAge);
+    });
+
 
 })();
