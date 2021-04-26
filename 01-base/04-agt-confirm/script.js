@@ -21,7 +21,7 @@
     Town: ${townQuestion}
     Is this information correct? Please click OK`);
 
-    if (answers !== true) {
+    if (answers === false) {
         personalInfo();
     }
 
