@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    const computers = [
+    let computers = [
         {id: "0001", available: false, user: "leny", os: "macOS"},
         {id: "0002", available: false, user: "Nicolas"},
         {id: "0003"},
@@ -27,4 +27,19 @@
         user: null,
     };
     // your code here
-})();
+
+    let btn = document.getElementById("run");
+
+    btn.addEventListener("click", () => {
+
+        computers.forEach((pc, i) => {
+            computers[i] = {...defaultProps, ...pc};
+        })
+
+        console.log(computers)
+    })
+
+    })();
+
+
+
