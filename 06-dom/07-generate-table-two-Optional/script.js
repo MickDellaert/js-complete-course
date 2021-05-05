@@ -13,4 +13,18 @@
 
     // your code here
 
+    let target = document.getElementById("target");
+    let table = document.createElement('table');
+
+    for (let i = 1; i < 11; i++) {
+        let row = table.insertRow();
+            for (let j = 1; j < 11; j++) {
+            let cell = row.insertCell();
+                cell.innerText = i*j;
+        }
+    }
+
+    target.appendChild(table);
+    table.setAttribute("border", "1");
+
 })();

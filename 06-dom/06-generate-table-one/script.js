@@ -12,35 +12,23 @@
 (function() {
 
     // your code here
- /* let target = document.getElementById("target");
-    let table = document.createElement("table");
 
-    table.setAttribute("border", "1")
+      let target = document.getElementById("target");
+      let table = document.createElement('table');
 
-    for (let i = 0; i < 10; i++) {
-        let tr = document.createElement("tr");
-        for (let j = 0; j < 1; i++) {
-            let td = document.createElement("td");
-            tr.appendChild(td);
-        }
-        table.appendChild(tr);
-    }
-    target.appendChild(table); */
-
-      let target = document.getElementById("target")
-      let table = document.createElement('table')
-
-      table.setAttribute("border", "1")
+      table.setAttribute("border", "1");
 
       for (let i = 0; i < 10; i++) {
-          let tr = document.createElement('tr')
+          let tr = document.createElement('tr');
           for (let j = 0; j < 1; j++) {
-              let td = document.createElement('td')
-              tr.appendChild(td)
+              let td = document.createElement('td');
+              tr.appendChild(td);
           }
-          table.appendChild(tr)
+          table.appendChild(tr);
       }
-      target.appendChild(table)
+      target.appendChild(table);
+
+
 
 
 

@@ -20,10 +20,6 @@
 
            const inputLength = input.value;
            counter.innerHTML = `${inputLength.length}/${10}`;
-
     })
-
-
-
 
 })();

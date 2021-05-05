@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    let input = document.getElementById("pass-one");
+    let indicator = document.querySelector("#validity");
+    input.maxLength = "10";
+
+    let regex=("(?=(.*?\\d){2})[a-zA-Z0-9]{8,}");
+
+    input.addEventListener("input", (e) => {
+
+            if (input.value.match(regex))
+            indicator.innerHTML = `Ok`;
+            else {
+                indicator.innerHTML =`Not ok`
+            }
+    })
 
 })();

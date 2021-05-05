@@ -11,7 +11,7 @@
 
 (function() {
 
-    var gallery= [
+    let gallery= [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -20,5 +20,16 @@
     ];
 
     // your code here
+
+    // first image gets called twice, needs fix
+
+    let index = 0;
+
+    let nextBtn = document.getElementById("next");
+    let image = document.querySelector("img");
+
+    nextBtn.addEventListener("click",  () => {
+    image.src = gallery[index++ % gallery.length];
+    })
 
 })();
