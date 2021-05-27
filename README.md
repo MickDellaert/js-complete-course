@@ -1,5 +1,15 @@
 # The fields: JavaScript
 
+Introductory exercises on working with Javascript:
+* Deploying a local server to have a more convenient acces to the exercises
+* Learning how to make content interactive
+* Making first small applications 
+* Manipulating DOM elements upon user input
+* Working with arrays, objects, dates
+* Using fetch API
+
+---
+
 Welcome to the JavaScript folder.
 
 ## Structure
